@@ -1,0 +1,19 @@
+body {
+	background-color: grey;
+}
+
+h1 {
+	font-family:'Montserrat', sans-seriff;
+	text-align: center;
+}	
+
+
+button {
+	margin: auto;
+	display: block;
+}
+
+
+
+
+
