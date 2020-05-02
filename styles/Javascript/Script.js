@@ -14,14 +14,45 @@ var characters = [
 ];
 
 // Prompt for number of of character between > 8 and < 128 
+function amountPrompt() { 
+    var length = prompt("How long would you like the password to be?")
+    length = parseInt(length);
+    if(isNaN(length)) {
+        alert("The input is not a number")
+    }
+    else {
+        if (length < 8) {
+            alert("Not long enough");
+        }
+        else if (length >128) {
+            alert("To large");
+        }
+        else {
+            return length
+        }
+
+    }
+}
+var el = document.getElementById("test");
+el.textContent = amountPrompt();
 // Function to create password
 function newpassword() {
     var randomNumber = Math.floor(Math.random() * quotes.length);
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 
+var myArray = ['yellow', 'gross', 'school', 'boy', 'work',  'love', 'no', 'broken', 'space', 'boring' ];
 
+var output = document.getElementById("result");
+var randGen = function () {
+  	
+  	output.innerHTML = "";
+  
+  	var rand = myArray[Math.round(Math.random() * (myArray.length - 1))];
 
+  	
+    output.innerHTML = rand;
+};
 
 
 

@@ -1,12 +1,17 @@
 body {
-	background-color: grey;
+	background-color: black;
 }
 
 h1 {
 	font-family:'Montserrat', sans-seriff;
 	text-align: center;
+	color: greenyellow;
 }	
 
+#test {
+	color: greenyellow;
+	text-align: center;
+}
 
 button {
 	margin: auto;
