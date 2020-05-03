@@ -55,15 +55,15 @@ function amountPrompt() {
 }
 
 // Prompt for Upper Case
-function upperCase () {
-    var utxt;
-    var upper = confirm("Include Upper Case?")
-    if (upper == true) {
-        return upper;
-    } else (upper == false); {
-        alert("Weak but okay");
-    }
-}
+//function upperCase () {
+    //var utxt;
+    // var upper = confirm("Include Upper Case?")
+    // if (upper == true) {
+        // return upper;
+    // } else (upper == false); {
+    //   alert("Weak but okay");
+    //}
+//}
 
 var el = document.getElementById("test");
 el.textContent = amountPrompt();
