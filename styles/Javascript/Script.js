@@ -18,17 +18,21 @@ var characters = [
     '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '?'
 ];
 
-var questions = [{
-    question: "How long would you like the password to be?"
-    amountLowestAns: 8;
-    amountHighestAns: 128;
-    toHigh: "To many characters"
-    toLow: "Not long Enough "
-}
-{
-    question: "Include Upper Case"
-    answer: "Yes"
-}]
+var question = [{
+    question: 'How long would you like the password to be?',
+    amountLowestAns: '8',
+    amountHighestAns: '128',
+    toHigh: 'To many characters',
+    toLow: 'Not long Enough'
+}];
+
+
+var questions = [
+    { question: 'Include Lower Case?', anwser:'yes', affirm:'Sounds Good', rebuttal:'Weak but Okay'},
+    { question: 'Include Upper Case?', answer:'yes', affirm:'Sounds Good', rebuttal:'Weak but Okay'},
+    { question: 'Include Characters?', answer:'yes', affirm:'Sounds Good', rebuttal:'Weak but Okay'}
+];
+
 // Prompt for number of of character between > 8 and < 128 
 function amountPrompt() { 
     var fQuestion = prompt("How long would you like the password to be?")
